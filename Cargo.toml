@@ -18,22 +18,22 @@ pickup = ["dep:avian_pickup"]
 
 [dependencies]
 avian3d = { version = "0.8", default-features = false, features = ["parry-f32", "3d"] }
-bevy_ecs = { version = "0.20", default-features = false }
-bevy_app = { version = "0.20", default-features = false }
-bevy_derive = { version = "0.20", default-features = false }
-bevy_utils = { version = "0.20", default-features = false }
-bevy_math = { version = "0.20", default-features = false }
-bevy_shape = { version = "0.20", default-features = false }
-bevy_reflect = { version = "0.20", default-features = false }
-bevy_transform = { version = "0.20", default-features = false }
-bevy_time = { version = "0.20", default-features = false }
+bevy_ecs = { git = "https://github.com/bevyengine/bevy", branch = "main", default-features = false }
+bevy_app = { git = "https://github.com/bevyengine/bevy", branch = "main", default-features = false }
+bevy_derive = { git = "https://github.com/bevyengine/bevy", branch = "main", default-features = false }
+bevy_utils = { git = "https://github.com/bevyengine/bevy", branch = "main", default-features = false }
+bevy_math = { git = "https://github.com/bevyengine/bevy", branch = "main", default-features = false }
+bevy_shape = { git = "https://github.com/bevyengine/bevy", branch = "main", default-features = false }
+bevy_reflect = { git = "https://github.com/bevyengine/bevy", branch = "main", default-features = false }
+bevy_transform = { git = "https://github.com/bevyengine/bevy", branch = "main", default-features = false }
+bevy_time = { git = "https://github.com/bevyengine/bevy", branch = "main", default-features = false }
 bevy_enhanced_input = { version = "0.27", default-features = false }
 tracing = { version = "0.1", default-features = false }
 avian_pickup = { version = "0.7", default-features = false, optional = true }
 serde = { version = "1", default-features = false, features = ["derive"], optional = true }
 
 [dev-dependencies]
-bevy = { version = "0.20", features = ["track_location", "dynamic_linking", "file_watcher"] }
+bevy = { git = "https://github.com/bevyengine/bevy", branch = "main", features = ["track_location", "dynamic_linking", "file_watcher"] }
 bevy_trenchbroom = { version = "0.16.0", features = ["avian_f32"] }
 bevy_mod_mipmap_generator = "0.3"
 avian3d = "0.8.0"
